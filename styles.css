@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font:  sans-serif;
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(167, 2, 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    height: 140x;
+    width: 140px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.shop-name {
+    color: #fdfdfd;
+}
+
+.content-section{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+    height: 70ch;
+    color: #050505;
+    text-align: center;
+    background-image: url(170353e5-7091-4a41-b43e-2d687ffa9ce0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    background-color: rgb(167, 2, 2);
+    background-color: #fdfdfd;
+}
+.box h1{
+    color: #0c0c0c;
+    font-size: 50px;
+}
+.box h1:hover{
+    color: rgb(5, 112, 253);
+    font-size: 70px;
+}
+.box h2{
+    color: rgb(190, 0, 0);
+    font-size: 60px;
+}
+.box p{
+    color: rgb(236, 235, 233);
+    font-size: 20px;
+    background-color: rgb(167, 2, 2);
+}
+
+.content-section.active {
+    display: flex;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 50px;
+    width: 100%;
+}
+
+.product {
+    background-image: linear-gradient(rgba(214, 4, 4, 0.74), rgb(249, 255, 247));
+    background-color: rgb(167, 2, 2);
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.product1 {
+    background-image: linear-gradient(rgb(214, 4, 4, 0.74), rgb(249, 255, 247));
+    background-color: rgb(167, 2, 2);
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    color: #202020;
+    font-size: 10px;
+}
+
+.product2 {
+    background-image: linear-gradient(rgb(214, 4, 4, 0.74), rgb(249, 255, 247));
+    background-color: rgb(167, 2, 2);
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 10px;
+}
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(167, 2, 2);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+    padding: 20px;
+}
+
+#searchBar {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+.mycontact h1{
+    color: rgb(12, 12, 12);
+    font-size: 100px;
+
+}
+.mycontact p{
+    color: rgb(19, 19, 19);
+    font-size: 50;
+    background-color: #fff;
+}
+
+.aboutus h1{
+    color: #0c0c0c;
+    font-size: 70px;
+}
+
+.aboutus p{
+    color: #0c0c0c;
+    font-size: 25px;
+    background-color: #fdfdfd;
+}
+
+.checkout-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+.return {
+    align-items: flex-start;
+    font-size: 50;
+}

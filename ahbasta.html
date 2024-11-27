@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTEga E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+    <div class="logo">
+        <img src="OFFICIAL LOGO (2).png" alt="Logo">
+    </div>
+    <div class="shop-name">
+        <h1>Your Totega</h1>
+    </div>
+    <ul>
+        <i><li><a href="#" onclick="showSection('home')">Home</a></li></i>
+        <i><li><a href="#" onclick="showSection('shop')">Shop</a></li></i>
+        <i><li><a href="#" onclick="showSection('cart')">Cart</a></li></i>
+        <i><li><a href="#" onclick="showSection('contact')">Contact</a></li></i>
+        <i><li><a href="#" onclick="showSection('about')">About Us</a></li></i>
+        <i><li><a href="#" onclick="showSection('return and refund')">Return and Refund Policy</a></li></i>
+        <i><li><a href="#" onclick="showSection('shipping information')">Shipping Information</a></li></i>
+        <i><li><a href="#" onclick="showSection('checkout')">Checkout</a></li></i>
+    </ul>
+</nav>
+
+    <section id="home" class="content-section active">
+        <img src="OFFICIAL LOGO (2).png" alt="">
+        <div class="box">
+            <h1>New Release, Limited Edition</h1>
+            <h2>Don't let this tote be your TOTE-ga!</h2>
+            <p>Make it yours before someone else does.</p>
+        </div>
+        
+    </section>
+
+    <section id="shop" class="content-section">
+        <h1>Shop Our Collection</h1>
+        <input type="text" id="searchBar" placeholder="Search products..." oninput="searchProducts()">
+        <div id="product-grid" class="product-grid">
+            <div class="product1" data-name="STAR NG PASKO">
+                <img src="star (1).png" alt="Star ng Pasko">
+                <h2>STAR NG PASKO</h2>
+                <i><p> Christmas Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 1')">Add to Cart</button>
+            </div>
+            <div class="product2" data-name="BIBINGKA">
+                <img src="bibingka (1).png" alt="Product 2">
+                <h2>BIBINGKA</h2>
+                <i><p>Christmas Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Titindig">
+                <img src="tindig.png" alt="Product 3">
+                <h2>TITINDIG AKO</h2>
+                <i><p>Tindig Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 3')">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Liwanag sa Dilim">
+                <img src="liwanag.png" alt="Product 4">
+                <h2>LIWANAG SA DILIM</h2>
+                <i><p>Tindig Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 4')">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Good Things Take Some Time">
+                <img src="everyday.png" alt="Product 5">
+                <h2>GOOD THINGS TAKE SOME TIME</h2>
+                <i><p>School Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 5')">Add to Cart</button>
+            </div>
+            <div class="product" data-name="The Best is Yet To Come">
+                <img src="yet to come.png" alt="Product 6">
+                <h2>THE BEST IS YET TO COME</h2>
+                <i><p>School Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 6')">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Hiraya">
+                <img src="hiraya (1).png" alt="Product 7">
+                <h2>HIRAYA</h2>
+                <i><p>Filipino Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 7')">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Padayon">
+                <img src="padayon.png" alt="Product 8">
+                <h2>PADAYON</h2>
+                <i><p>Filipino Edition</p></i>
+                <p>₱ 85.00</p>
+                <button onclick="addToCart('Product 8')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="content-section">
+        <h1>Your Cart</h1>
+        <ul id="cart-items"></ul>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="mycontact">
+        <h1>Contact Us</h1>
+        <p>Email: yourtotega@gmail.com</p>
+        <p>Facebook: yourTotega fb page
+        <p> Instagram: yourtotega bag</p>
+        <p>Phone: 0945-546-2277</p>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="aboutus">
+            <h1>About us</h1>
+            <i><p>Welcome to your Totega business, where style meets sustainability! We believe that a great tote bag is not just an accessory- it's statement of individuality and a commitment to eco-friendly livingh. Our mission is to provide high quality, fashionable tote bags that are designed for versatility and durability, serving all your needs while making a positive impact on the planet. At Totega business, we take pride in offering a diverse range of totes, from chic and trendy designs to practical everyday options. Each bag is crafted with care, using sustainable materials that not only look good but also minimize environmental harm. Whether you're heading to the grocery  store, the beach, or the office, our tote bags are perfect for every occasion.</p></i>
+        </div>   
+    </section>
+    
+    <section id="return and refund" class="content-section">
+        <div class="return">
+            <h1>Return Policy</h1>
+                <ul> 
+                    <li>Eligibility: Items must be returned within 30 days of the delivery date.</li>
+                    <li>Condition: Items must be unused, in their original condition, and include all original packaging.</li>
+                    <li>Return Process:
+                        Contact Us: Email us at yourTOTEga@gmail.com with your order number and reason for return.
+                        Receive Return Authorization: We will provide a return shipping label or instructions on how to return the item.
+                        Ship the Item: Pack the item securely and ship it using the provided label or according to the instructions.</li>
+                </ul>
+
+
+            <h2>Refund Policy</h2>
+                <ul>
+                    <li>Refund Method: Once your return is received and inspected, we will notify you of the approval or rejection of your refund. If approved, your refund will be processed to your original method of payment within 5-7 business days.</li>
+                    <li>Refund Amount: The refund will include the cost of the item, but shipping costs are non-refundable unless the item was damaged or incorrect.</li>
+                    <li>Exchanges: If you would like to exchange an item, simply follow the return process and place a new order for the desired item.</li>
+                </ul>
+
+                
+            <h3>Damage or defective items</h3>
+                <p>If you receive an item that is damaged or defective, please contact us immediately with video of the issue. We will provide a full refund or send a replacement at no additional cost.</p>
+                <i><p>Contact Us: If you have any questions about returns or refunds, feel free to reach out to us at yourTOTEga@gmail.com or call us at 09216554184.</p></i>
+        </div>   
+    </section>
+
+     <section id="shipping information" class="content-section">
+        <div class="shipping">
+            <h1>Shipping Information</h1>
+                <ul> 
+                    <li>Processing Time: Orders are processed within 1-2 business days if it s onhand and 10-15 business days if it is pre-order.</li>
+                    <li>Shipping Time:Standard Shipping: 5-7 business days
+                            ,Metro Manila: 2-3 business days
+                            ,Luzon: 2-3 business day
+                            ,Visayas: 5-7 business days
+                            ,Mindanao: 5-7 business days.</li>
+                   <li>Shipping Cost: Standard Shipping: 100
+                            ,Metro Manila: 75
+                            ,Luzon: 75
+                            ,Visayas: 85
+                            ,Mindanao: 95.</li>
+                    <li>International Shipping: We ship worldwide! Shipping times and costs vary by destination:
+                            ,Estimated delivery: 7-14 business days
+                            ,Cost: Calculated at checkout based on location.</li>
+                </ul>
+            <h2>Tracking</h2>
+                <ul>
+                    <li>Once your order has been shipped, you’ll receive an email with a tracking number to follow your package's journey.</li>
+                </ul>
+        </div>
+                
+    </section>
+    
+    <section id="checkout" class="content-section">
+        <div class="Checkout">
+            <h2>Checkout</h2>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Shipping Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="cash-on-delivery">Cash on delivery</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="gcash">Gcash</option>
+                </select>
+            </div>
+            <button type="submit" class="checkout-btn">Place Order</button>
+        </form>
+      </div>    
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
